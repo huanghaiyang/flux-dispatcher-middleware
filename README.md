@@ -38,5 +38,5 @@ flightDispatcher.dispatch({
 
 flightDispatcher.unbind('afterDispatching')
 
-assert.equal(flightDispatcher.events['afterDispatching'], undefined)
+assert.equal(_.isUndefined(flightDispatcher.events['afterDispatching']), true)
 ```
