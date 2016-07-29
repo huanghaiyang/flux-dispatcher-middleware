@@ -23,9 +23,7 @@ const DispatcherPack = Dispatcher => class extends Dispatcher {
     }
 
     unbind (eventname, handler) {
-        if (!handler) {
-            delete this.events[eventname]
-        }
+        delete this.events[eventname]
     }
 }
 
